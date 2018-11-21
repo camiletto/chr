@@ -1,0 +1,20 @@
+class Point:
+    def __init__(self, x=0, y=0, x2=0, y2=0):
+        self.x = x
+        self.y = y
+        self.x2= x2
+        self.y2= y2
+    def distance_from_origin(self):
+        return ((self.x2 ** 2) + (self.y2 ** 2)) ** 0.5
+    def distance_from_X1(self):
+        return (((self.x2-self.x)**2) + ((self.y2-self.y)**2)) ** 0.5        
+
+nuevo=Point()
+nuevo.x = float(input("Ingrese X1 "))
+nuevo.y = float(input("Ingrese Y1 "))
+nuevo.x2 = float(input("Ingrese X2 "))
+nuevo.y2 = float(input("Ingrese Y2 "))
+print(nuevo.distance_from_X1())
+print(nuevo.distance_from_origin())
+print('el cuadrado de X es %d' % (nuevo.x**2))
+print('el cuadrado de Y es %d' % (nuevo.y**2))
