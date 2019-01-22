@@ -1,2 +1,2 @@
-# chr
-test repo
+#CHR
+Testing and enjoying Github
